@@ -1,11 +1,29 @@
-import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import React from "react";
+import Navbar from "../Navbar/Navbar";
+import { Container, Accordion, Button } from "react-bootstrap";
+import JobPostings from "./JobPostings";
+
 const Job = () => {
   return (
     <div>
       <Navbar />
-      <h3>Job</h3>
+      <Container>
+        <h1 className="text-center py-3">Job Postings</h1>
+        <Accordion>
+          {JobPostings.map((item, idx) => (
+            <Accordion.Item eventKey={idx}>
+              <Accordion.Header>
+                <strong>{item.title}</strong>
+              </Accordion.Header>
+              <Accordion.Body>
+                <p>{item.body}</p>
+                <Button className="btn btn-danger">Apply</Button>
+              </Accordion.Body>
+            </Accordion.Item>
+          ))}
+        </Accordion>
+      </Container>
     </div>
   );
-}
+};
 export default Job;

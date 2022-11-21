@@ -1,11 +1,22 @@
-import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import React from "react";
+import Navbar from "../Navbar/Navbar";
+import "./Home.css";
+import background from "../Img/bg.png";
 const Home = () => {
   return (
-    <div>
+    <div
+      className="backgroundStyle"
+      style={{
+        backgroundImage: `url(${background})`,
+        height: "100vh",
+      }}
+    >
       <Navbar />
-      <h3>Home</h3>
+      {/* <h3 className="text-center" style={{ color: "red" }}>
+        Choose a job you love, and you will never have to work a day in your
+        life
+      </h3> */}
     </div>
   );
-}
+};
 export default Home;
