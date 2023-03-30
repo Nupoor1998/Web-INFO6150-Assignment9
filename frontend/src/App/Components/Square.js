@@ -10,9 +10,9 @@ class Square extends React.Component {
     return (
       <div style={squareStyle}>
         For further details reach out to the below details <br />
-        <a href="#">jain.apo@northeastern.edu</a>
+        <a href="mailto:korde.n@northeastern.edu">korde.n@northeastern.edu</a>  
         <br />
-        <a href="#">857-313-5946</a>
+        <a href="tel:857-123-1234">857-123-1234</a>
       </div>
     );
   }

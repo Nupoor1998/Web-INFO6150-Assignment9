@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Home.css";
-import background from "../Img/bg.png";
+import background from "../Img/post.jpg";
 const Home = () => {
   return (
     <div

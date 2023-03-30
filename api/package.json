@@ -6,17 +6,6 @@
   "scripts": {
     "start": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sharunkumar-ks/WebDesign-Assignment-8.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sharunkumar-ks/WebDesign-Assignment-8/issues"
-  },
-  "homepage": "https://github.com/sharunkumar-ks/WebDesign-Assignment-8#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.1",
